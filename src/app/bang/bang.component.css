@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.du-doan {
+    margin: 50px 0 200px 0;
+}
+
+.container {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
