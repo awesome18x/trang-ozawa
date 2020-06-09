@@ -1,1 +1,137 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+    height: 50%;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    /* 75% {
+            left: -300%;
+        }
+        95% {
+            left: -300%;
+        } */
+    /* 100% {
+            left: -400%;
+        } */
+}
+
+section {
+    display: block;
+    margin-top: 50px;
+}
+
+picture {
+    width: 360px;
+    height: 400px;
+}
+
+.tl p {
+    position: absolute;
+    background: #fff;
+    color: #000;
+    width: auto;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 70px 10px 15px;
+    z-index: 9;
+    top: 15px;
+    right: -30px;
+    margin: 0;
+    transition: .3s right ease;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.tl picture img {
+    width: 300px;
+    height: auto;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.tl picture:hover img {
+    transform: scale(1.05);
+}
+
+.nav {
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 420px;
+    text-align: center;
+    font-size: 15px;
+    padding-left: 420px;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 10px;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #FF7600;
+}

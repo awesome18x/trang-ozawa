@@ -8,6 +8,7 @@ import { BangComponent } from './bang/bang.component';
 import { BieuDoComponent } from './bieu-do/bieu-do.component';
 import { QuyDinhComponent } from './quy-dinh/quy-dinh.component';
 import { ThanhToanComponent } from './thanh-toan/thanh-toan.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ThanhToanComponent } from './thanh-toan/thanh-toan.component';
     BangComponent,
     BieuDoComponent,
     QuyDinhComponent,
-    ThanhToanComponent
+    ThanhToanComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
