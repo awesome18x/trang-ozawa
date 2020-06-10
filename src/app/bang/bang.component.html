@@ -2,7 +2,25 @@
     <div class="title">
         <h1>Dự Đoán</h1>
     </div>
-    <div class="container">
+    <div class="tinh-tang" style="margin-left: 44%;">
+        <button (click)="runProgram()" type="button" class="btn btn-success">Chạy chương trình</button>
+
+    </div>
+    <div class="lds-spinner" *ngIf="runningx">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container" *ngIf="running">
         <table class="table table-hover text-center">
             <thead>
                 <tr>
@@ -63,26 +81,70 @@
                     <td>20081.452528</td>
                 </tr>
                 <tr>
-                    <td>569</td>
-                    <td>48</td>
+                    <td>198</td>
+                    <td>51</td>
+                    <td>0</td>
+                    <td>18.1</td>
+                    <td>0</td>
+                    <td>0</td>
                     <td>1</td>
-                    <td>40.6</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>43315.45</td>
-                    <td>42277.686597</td>
+                    <td>9583.75</td>
+                    <td>10372.310201</td>
                 </tr>
                 <tr>
-                    <td>569</td>
-                    <td>48</td>
+                    <td>31</td>
+                    <td>18</td>
+                    <td>0</td>
+                    <td>26.3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3530.51</td>
+                    <td>4775.823205</td>
+                </tr>
+                <tr>
+                    <td>1256</td>
+                    <td>51</td>
+                    <td>0</td>
+                    <td>36.4</td>
+                    <td>3</td>
+                    <td>0</td>
                     <td>1</td>
-                    <td>40.6</td>
-                    <td>2</td>
+                    <td>17076.59</td>
+                    <td>18041.866042</td>
+                </tr>
+                <tr>
+                    <td>1219</td>
+                    <td>38</td>
+                    <td>0</td>
+                    <td>30.2</td>
+                    <td>3</td>
+                    <td>0</td>
                     <td>1</td>
+                    <td>9984.99</td>
+                    <td>11220.390484</td>
+                </tr>
+                <tr>
+                    <td>1320</td>
+                    <td>31</td>
                     <td>1</td>
-                    <td>43315.45</td>
-                    <td>42277.686597</td>
+                    <td>31.1</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>11435.04</td>
+                    <td>12527.600570</td>
+                </tr>
+                <tr>
+                    <td>613</td>
+                    <td>34</td>
+                    <td>0</td>
+                    <td>19.0</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>7221.70</td>
+                    <td>8033.741866</td>
                 </tr>
             </tbody>
         </table>

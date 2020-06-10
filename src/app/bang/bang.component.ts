@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bang.component.css']
 })
 export class BangComponent implements OnInit {
-
+  running = false;
+  runningx = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  runProgram() {
+    this.runningx = true;
+    setTimeout(() => {
+      this.running = true;
+      this.runningx = false;
+    }, 2000);
   }
 
 }

@@ -7,3 +7,10 @@ a.active {
     color: #ff7600;
     border-bottom-color: #fff;
 }
+
+.text-footer {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.42857143;
+    width: 100%;
+}

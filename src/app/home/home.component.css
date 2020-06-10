@@ -1,0 +1,25 @@
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 300px;
+    transition: 0.5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    transform: scale(1.05);
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.image {
+    display: block;
+    border-radius: 15px;
+}
