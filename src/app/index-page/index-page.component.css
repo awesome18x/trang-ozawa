@@ -14,3 +14,36 @@ a.active {
     line-height: 1.42857143;
     width: 100%;
 }
+
+footer .footer-inner {
+    /* background: black; */
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+.page-late {
+    background-color: black;
+}
+
+.tiki {
+    background-color: black;
+}
+
+.tiki h6 {
+    background-color: black;
+}
+
+.tiki p {
+    background-color: black;
+}
+
+.tiki h6 {
+    color: #fff;
+}
+
+.tiki p {
+    color: #fff;
+}
