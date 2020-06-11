@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    if (this.loginForm.value.email === 'daitrang@gmail.com' && this.loginForm.value.password === '123456') {
+    if (this.loginForm.value.email === 'trangmun097@gmail.com' && this.loginForm.value.password === '123456') {
       this.toastrService.success('Đăng nhập thành công', 'Thành công');
       this.router.navigateByUrl('/index/home');
     } else {
