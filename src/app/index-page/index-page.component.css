@@ -47,3 +47,8 @@ footer .footer-inner {
 .tiki p {
     color: #fff;
 }
+
+.tiki p:hover {
+    color: #ff7600;
+    cursor: pointer;
+}
