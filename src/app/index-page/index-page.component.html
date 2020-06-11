@@ -1,0 +1,35 @@
+<div id="slider">
+    <figure>
+        <img src="assets/img/timm.png">
+        <img src="assets/img/slide-img1.jpg">
+        <img src="assets/img/slide-img2.jpg">
+    </figure>
+</div>
+
+<ul class="nav" style="text-align: center; padding-left: 420px;">
+    <li><a routerLink="/index" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}">Trang chủ</a></li>
+    <li><a routerLink="/index/gioi-thieu" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}">Giới thiệu</a></li>
+    <li><a routerLink="/index/quy-dinh-moi" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}">Quy định</a></li>
+    <li><a routerLink="/index/thanh-toan" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}">Thanh toán</a></li>
+    <li><a routerLink="/index/du-doan" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}">Dự đoán</a></li>
+    <li><a routerLink="/index/bieu-do" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}">Biểu đồ</a></li>
+    <li><a routerLink="/auth/logout" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+            true}">Thoát</a></li>
+</ul>
+
+
+<div>
+    <router-outlet></router-outlet>
+</div>
+
+<footer class="footer text-right">
+    <div class="container">
+        <span class="text-footer">Nguyễn Thị Đài Trang.</span>
+    </div>
+</footer>

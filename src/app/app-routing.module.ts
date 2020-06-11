@@ -1,3 +1,6 @@
+import { LogoutComponent } from './auth/logout/logout.component';
+import { IndexPageComponent } from './index-page/index-page.component';
+import { LoginComponent } from './auth/login/login.component';
 import { HomeComponent } from './home/home.component';
 import { BangComponent } from './bang/bang.component';
 import { ThanhToanComponent } from './thanh-toan/thanh-toan.component';
@@ -10,38 +13,67 @@ import { BieuDoComponent } from './bieu-do/bieu-do.component';
 
 const routes: Routes = [
   {
+    path: 'index',
+    component: IndexPageComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+      },
+      {
+        path: 'home',
+        component: HomeComponent,
+      },
+      {
+        path: 'quy-dinh-moi',
+        component: QuyDinhComponent
+      },
+      {
+        path: 'gioi-thieu',
+        component: GioiThieuComponent
+      },
+      {
+        path: 'bieu-do',
+        component: BieuDoComponent
+      },
+      {
+        path: 'thanh-toan',
+        component: ThanhToanComponent
+      },
+      {
+        path: 'du-doan',
+        component: BangComponent
+      },
+      {
+        path: 'login',
+        component: LoginComponent
+      }
+    ]
+  },
+  {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'auth/login',
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    component: HomeComponent,
-  },
-  {
-    path: 'quy-dinh-moi',
-    component: QuyDinhComponent
-  },
-  {
-    path: 'gioi-thieu',
-    component: GioiThieuComponent
-  },
-  {
-    path: 'bieu-do',
-    component: BieuDoComponent
-  },
-  {
-    path: 'thanh-toan',
-    component: ThanhToanComponent
-  },
-  {
-    path: 'du-doan',
-    component: BangComponent
-  },
-  // {
-  //   path: '**',
-  //   redirectTo: ''
-  // }
+    path: 'auth',
+    children: [
+      {
+        path: 'login',
+        component: LoginComponent
+      },
+      {
+        path: '',
+        redirectTo: 'login',
+        pathMatch: 'full'
+      },
+      {
+        path: 'logout',
+        component: LogoutComponent
+      }
+    ]
+  }
 ];
 
 @NgModule({
